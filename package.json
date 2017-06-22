@@ -1,0 +1,29 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cache": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-rename": "latest",
+    "gulp-rigger": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglifyjs": "latest",
+    "gulp-uncss": "^1.0.6",
+    "gulp.spritesmith": "^6.5.0",
+    "imagemin-pngquant": "latest",
+    "main-bower-files": "^2.13.1"
+  }
+}

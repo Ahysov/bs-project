@@ -1,0 +1,76 @@
+#header {
+  background-color: #f0f3f8;
+}
+
+.my-header__navbar-style {
+  margin: 8px 0 9px;
+  border: 0;
+  min-height: auto;
+  box-shadow: none;
+  border-radius: 0;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.my-navbar-right {
+  margin: 0;
+}
+
+#header .my-header__brand {
+  height: auto;
+  padding: 15px 10px;
+  margin-left: 0;
+}
+
+#header .my-header__link {
+  background-color: transparent;
+  padding: 15px 10px;
+}
+
+.my-navbar-right .dropdown {
+  position: static;
+}
+
+.my-navbar-form-style {
+  margin: 0;
+  border: none;
+}
+
+#header .active > a {
+  background-color: #ee3346;
+  border-radius: 12px;
+  color: #fff;
+}
+
+#header a {
+  color: #454647;
+}
+
+.icon{
+  display: inline-block;
+}
+
+.icon.ico-search{
+  @include sprite($search);
+}
+
+.icon.ico-profile{
+  @include sprite($profile);
+}
+
+.icon.ico-arrow-dropdown{
+  @include sprite($arrow-dropdown);
+}
+
+.icon.ico-cart{
+  @include sprite($cart);
+}
+
+@media (min-width: 768px) {
+
+  #header .my-header__link {
+    background-color: transparent;
+    padding: 2px 18px 3px;
+  }
+}
