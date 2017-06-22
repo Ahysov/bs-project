@@ -68,25 +68,25 @@ gulp.task('scripts', function(){
 	.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('mainfiles', function() {
-	return gulp.src(mainBowerFiles({
-		"overrides" : {
-			"bootstrap" : {
-				"main" : [
-				"./dist/js/bootstrap.min.js",
-				"./dist/css/bootstrap.min.css",
-				"./dist/css/bootstrap-theme.min.css"
-				]
-			},
-			"jquery" : {
-				"main" : [
-				"./dist/jquery.min.js"
-				]
-			}
-		}
-	}))
-	.pipe(gulp.dest('dist/libs'));
-});
+// gulp.task('mainfiles', function() {
+// 	return gulp.src(mainBowerFiles({
+// 		"overrides" : {
+// 			"bootstrap" : {
+// 				"main" : [
+// 				"./dist/js/bootstrap.min.js",
+// 				"./dist/css/bootstrap.min.css",
+// 				"./dist/css/bootstrap-theme.min.css"
+// 				]
+// 			},
+// 			"jquery" : {
+// 				"main" : [
+// 				"./dist/jquery.min.js"
+// 				]
+// 			}
+// 		}
+// 	}))
+// 	.pipe(gulp.dest('dist/libs'));
+// });
 
 gulp.task('sprite', function () {
 	var spriteData = gulp.src('app/img/icons/*.png').pipe(spritesmith({
