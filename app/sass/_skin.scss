@@ -1,0 +1,70 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+a{
+    color: #454647;
+}
+
+.nav>li{
+	padding: 8px 0;
+}
+
+.nav > li > a {
+	padding: 9px 18px 10px;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #454647;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #454647;
+    line-height: 6px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #fff;
+	background-color: #ee3346;
+	border-radius: 12px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #ee3346;
+    border-radius: 12px;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar {
+	position: relative;
+	min-height: auto;
+	margin-bottom: 0;
+	border: none;
+}
+
+.container-fluid{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.navbar-collapse{
+	padding-right: 0;
+	padding-left: 0;
+}

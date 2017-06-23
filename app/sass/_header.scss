@@ -1,54 +1,22 @@
-#header {
+#my-header{
   background-color: #f0f3f8;
 }
 
-.my-header__navbar-style {
-  margin: 8px 0 9px;
-  border: 0;
-  min-height: auto;
-  box-shadow: none;
-  border-radius: 0;
-  background-image: none;
-  background-repeat: no-repeat;
-  background-color: transparent;
+#my-head-nav-right .nav{
+  margin-right: 10px;
 }
 
-.my-navbar-right {
-  margin: 0;
+#my-head-nav-right .nav>li{
+  margin-left: 31px;
 }
 
-#header .my-header__brand {
-  height: auto;
-  padding: 15px 10px;
-  margin-left: 0;
-}
-
-#header .my-header__link {
-  background-color: transparent;
-  padding: 15px 10px;
-}
-
-.my-navbar-right .dropdown {
-  position: static;
-}
-
-.my-navbar-form-style {
-  margin: 0;
-  border: none;
-}
-
-#header .active > a {
-  background-color: #ee3346;
-  border-radius: 12px;
-  color: #fff;
-}
-
-#header a {
-  color: #454647;
+#my-head-nav-right .pull-left>a{
+  padding: 0 5px;
 }
 
 .icon{
   display: inline-block;
+  vertical-align: top;
 }
 
 .icon.ico-search{
@@ -61,16 +29,20 @@
 
 .icon.ico-arrow-dropdown{
   @include sprite($arrow-dropdown);
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translate(0, -50%);
 }
 
 .icon.ico-cart{
   @include sprite($cart);
 }
 
-@media (min-width: 768px) {
-
-  #header .my-header__link {
-    background-color: transparent;
-    padding: 2px 18px 3px;
-  }
+.my-quantity-of-goods{
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translate(0, -50%);
 }
