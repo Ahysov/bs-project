@@ -9,55 +9,66 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
-$arrow-dropdown-name: 'arrow-dropdown';
-$arrow-dropdown-x: 21px;
-$arrow-dropdown-y: 24px;
-$arrow-dropdown-offset-x: -21px;
-$arrow-dropdown-offset-y: -24px;
-$arrow-dropdown-width: 9px;
-$arrow-dropdown-height: 5px;
-$arrow-dropdown-total-width: 49px;
-$arrow-dropdown-total-height: 46px;
-$arrow-dropdown-image: 'sprite.png';
-$arrow-dropdown: (21px, 24px, -21px, -24px, 9px, 5px, 49px, 46px, 'sprite.png', 'arrow-dropdown', );
+$breadcrumb-name: 'breadcrumb';
+$breadcrumb-x: 53px;
+$breadcrumb-y: 12px;
+$breadcrumb-offset-x: -53px;
+$breadcrumb-offset-y: -12px;
+$breadcrumb-width: 17px;
+$breadcrumb-height: 7px;
+$breadcrumb-total-width: 85px;
+$breadcrumb-total-height: 50px;
+$breadcrumb-image: 'sprite.png';
+$breadcrumb: (53px, 12px, -53px, -12px, 17px, 7px, 85px, 50px, 'sprite.png', 'breadcrumb', );
+$burger-name: 'burger';
+$burger-x: 53px;
+$burger-y: 0px;
+$burger-offset-x: -53px;
+$burger-offset-y: 0px;
+$burger-width: 32px;
+$burger-height: 12px;
+$burger-total-width: 85px;
+$burger-total-height: 50px;
+$burger-image: 'sprite.png';
+$burger: (53px, 0px, -53px, 0px, 32px, 12px, 85px, 50px, 'sprite.png', 'burger', );
 $cart-name: 'cart';
-$cart-x: 24px;
+$cart-x: 26px;
 $cart-y: 0px;
-$cart-offset-x: -24px;
+$cart-offset-x: -26px;
 $cart-offset-y: 0px;
-$cart-width: 25px;
-$cart-height: 23px;
-$cart-total-width: 49px;
-$cart-total-height: 46px;
+$cart-width: 27px;
+$cart-height: 25px;
+$cart-total-width: 85px;
+$cart-total-height: 50px;
 $cart-image: 'sprite.png';
-$cart: (24px, 0px, -24px, 0px, 25px, 23px, 49px, 46px, 'sprite.png', 'cart', );
+$cart: (26px, 0px, -26px, 0px, 27px, 25px, 85px, 50px, 'sprite.png', 'cart', );
 $profile-name: 'profile';
 $profile-x: 0px;
 $profile-y: 0px;
 $profile-offset-x: 0px;
 $profile-offset-y: 0px;
-$profile-width: 24px;
-$profile-height: 24px;
-$profile-total-width: 49px;
-$profile-total-height: 46px;
+$profile-width: 26px;
+$profile-height: 26px;
+$profile-total-width: 85px;
+$profile-total-height: 50px;
 $profile-image: 'sprite.png';
-$profile: (0px, 0px, 0px, 0px, 24px, 24px, 49px, 46px, 'sprite.png', 'profile', );
+$profile: (0px, 0px, 0px, 0px, 26px, 26px, 85px, 50px, 'sprite.png', 'profile', );
 $search-name: 'search';
 $search-x: 0px;
-$search-y: 24px;
+$search-y: 26px;
 $search-offset-x: 0px;
-$search-offset-y: -24px;
-$search-width: 21px;
-$search-height: 22px;
-$search-total-width: 49px;
-$search-total-height: 46px;
+$search-offset-y: -26px;
+$search-width: 23px;
+$search-height: 24px;
+$search-total-width: 85px;
+$search-total-height: 50px;
 $search-image: 'sprite.png';
-$search: (0px, 24px, 0px, -24px, 21px, 22px, 49px, 46px, 'sprite.png', 'search', );
-$spritesheet-width: 49px;
-$spritesheet-height: 46px;
+$search: (0px, 26px, 0px, -26px, 23px, 24px, 85px, 50px, 'sprite.png', 'search', );
+$spritesheet-width: 85px;
+$spritesheet-height: 50px;
 $spritesheet-image: 'sprite.png';
-$spritesheet-sprites: ($arrow-dropdown, $cart, $profile, $search, );
-$spritesheet: (49px, 46px, 'sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($breadcrumb, $burger, $cart, $profile, $search, );
+$spritesheet: (85px, 50px, 'sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //
@@ -99,7 +110,7 @@ $spritesheet: (49px, 46px, 'sprite.png', $spritesheet-sprites, );
 
 @mixin sprite-image($sprite) {
   $sprite-image: nth($sprite, 9);
-  background-image: url(../sprites/#{$sprite-image});
+  background-image: url(../sprites/#{$sprite-image}); // change path to sprite.scss
 }
 
 @mixin sprite($sprite) {

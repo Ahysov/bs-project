@@ -1,3 +1,88 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?7t852a");
+  src: url("../fonts/icomoon/icomoon.eot?7t852a#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?7t852a") format("truetype"), url("../fonts/icomoon/icomoon.woff?7t852a") format("woff"), url("../fonts/icomoon/icomoon.svg?7t852a#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_down_sm:before {
+  content: "\e900";
+  color: #202020;
+}
+
+.icon-arrow_up_sm:before {
+  content: "\e901";
+  color: #202020;
+}
+
+.icon-arrow_left_lg:before {
+  content: "\e902";
+  color: #202020;
+}
+
+.icon-arrow_right_lg:before {
+  content: "\e903";
+  color: #202020;
+}
+
+.icon-furniture:before {
+  content: "\e904";
+}
+
+.icon-kitchen:before {
+  content: "\e905";
+}
+
+.icon-house:before {
+  content: "\e906";
+}
+
+.icon-light:before {
+  content: "\e907";
+}
+
+.icon-clock:before {
+  content: "\e908";
+}
+
+.icon-pen:before {
+  content: "\e909";
+}
+
+.icon-rest:before {
+  content: "\e90a";
+}
+
+.icon-children:before {
+  content: "\e90b";
+}
+
+.icon-pdf_file .path1:before {
+  content: "\e90c";
+  color: #202020;
+}
+
+.icon-pdf_file .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: white;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -59,9 +144,8 @@ a {
   border: none;
 }
 
-.container-fluid {
-  padding-right: 0;
-  padding-left: 0;
+.navbar-nav {
+  margin: 0;
 }
 
 .navbar-collapse {
@@ -73,62 +157,80 @@ a {
   background-color: #f0f3f8;
 }
 
-#my-head-nav-right .nav {
-  margin-right: 10px;
-}
-
-#my-head-nav-right .nav > li {
-  margin-left: 31px;
+#my-header .container-fluid {
+  padding: 0;
 }
 
 #my-head-nav-right .pull-left > a {
-  padding: 0 5px;
+  padding: 0;
+}
+
+#my-head-nav-right > ul > li {
+  margin-right: 22px;
+}
+
+#my-head-nav-right > ul > li:last-child {
+  margin-right: 0;
+}
+
+#my-head-nav-right > ul > li:first-child {
+  margin-right: 35px;
 }
 
 .icon {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
+}
+
+.icon.icon-arrow_down_sm {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 20px;
+}
+
+.navbar-default .navbar-nav > .open > a .icon-arrow_down_sm:before, .navbar-default .navbar-nav > .open > a:focus .icon-arrow_down_sm:before, .navbar-default .navbar-nav > .open > a:hover .icon-arrow_down_sm:before {
+  color: #fff;
 }
 
 .icon.ico-search {
   background-image: url(../sprites/sprite.png);
-  background-position: 0px -24px;
-  width: 21px;
-  height: 22px;
+  background-position: 0px -26px;
+  width: 23px;
+  height: 24px;
 }
 
 .icon.ico-profile {
   background-image: url(../sprites/sprite.png);
   background-position: 0px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.icon.ico-arrow-dropdown {
-  background-image: url(../sprites/sprite.png);
-  background-position: -21px -24px;
-  width: 9px;
-  height: 5px;
-  position: absolute;
-  top: 50%;
-  right: 4px;
-  -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  width: 26px;
+  height: 26px;
+  position: relative;
+  margin-right: 20px;
 }
 
 .icon.ico-cart {
   background-image: url(../sprites/sprite.png);
-  background-position: -24px 0px;
-  width: 25px;
-  height: 23px;
+  background-position: -26px 0px;
+  width: 27px;
+  height: 25px;
+  position: relative;
+  margin-right: 15px;
+}
+
+#my-head-nav-right .icon-arrow_down_sm {
+  right: -20px;
 }
 
 .my-quantity-of-goods {
+  display: inline-block;
   font-size: 16px;
   position: absolute;
   top: 50%;
-  right: -10px;
+  right: -15px;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);

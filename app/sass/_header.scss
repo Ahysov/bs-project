@@ -2,21 +2,41 @@
   background-color: #f0f3f8;
 }
 
-#my-head-nav-right .nav{
-  margin-right: 10px;
-}
-
-#my-head-nav-right .nav>li{
-  margin-left: 31px;
+#my-header .container-fluid{
+  padding: 0;
 }
 
 #my-head-nav-right .pull-left>a{
-  padding: 0 5px;
+  padding: 0;
+}
+
+#my-head-nav-right>ul>li{
+  margin-right: 22px;
+}
+
+#my-head-nav-right>ul>li:last-child{
+  margin-right: 0;
+}
+
+#my-head-nav-right>ul>li:first-child{
+  margin-right: 35px;
 }
 
 .icon{
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
+}
+
+.icon.icon-arrow_down_sm{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  font-size: 20px;
+}
+
+.navbar-default .navbar-nav>.open>a .icon-arrow_down_sm:before, .navbar-default .navbar-nav>.open>a:focus .icon-arrow_down_sm:before, .navbar-default .navbar-nav>.open>a:hover .icon-arrow_down_sm:before {
+    color: #fff;
 }
 
 .icon.ico-search{
@@ -25,24 +45,25 @@
 
 .icon.ico-profile{
   @include sprite($profile);
-}
-
-.icon.ico-arrow-dropdown{
-  @include sprite($arrow-dropdown);
-  position: absolute;
-  top: 50%;
-  right: 4px;
-  transform: translate(0, -50%);
+  position: relative;
+  margin-right: 20px;
 }
 
 .icon.ico-cart{
   @include sprite($cart);
+  position: relative;
+  margin-right: 15px;
+}
+
+#my-head-nav-right .icon-arrow_down_sm{
+  right: -20px;
 }
 
 .my-quantity-of-goods{
+  display: inline-block;
   font-size: 16px;
   position: absolute;
   top: 50%;
-  right: -10px;
+  right: -15px;
   transform: translate(0, -50%);
 }

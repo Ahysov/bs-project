@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?7t852a');
+  src:  url('../fonts/icomoon/icomoon.eot?7t852a#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?7t852a') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?7t852a') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?7t852a#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_down_sm:before {
+  content: "\e900";
+  color: #202020;
+}
+.icon-arrow_up_sm:before {
+  content: "\e901";
+  color: #202020;
+}
+.icon-arrow_left_lg:before {
+  content: "\e902";
+  color: #202020;
+}
+.icon-arrow_right_lg:before {
+  content: "\e903";
+  color: #202020;
+}
+.icon-furniture:before {
+  content: "\e904";
+}
+.icon-kitchen:before {
+  content: "\e905";
+}
+.icon-house:before {
+  content: "\e906";
+}
+.icon-light:before {
+  content: "\e907";
+}
+.icon-clock:before {
+  content: "\e908";
+}
+.icon-pen:before {
+  content: "\e909";
+}
+.icon-rest:before {
+  content: "\e90a";
+}
+.icon-children:before {
+  content: "\e90b";
+}
+.icon-pdf_file .path1:before {
+  content: "\e90c";
+  color: rgb(32, 32, 32);
+}
+.icon-pdf_file .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
